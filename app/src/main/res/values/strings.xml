@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Track Your Shows</string>
+    <string name="watch_later">Plan To Watch</string>
+    <string name="watched">Completed Shows</string>
+
+    <string-array name="spinner">
+        <item>movie</item>
+        <item>series</item>
+        <item>episode</item>
+    </string-array>
+    <string name="title_activity_movie">MovieActivity</string>
+    <string name="tab_text_1">INFO</string>
+    <string name="tab_text_2">SEASONS</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

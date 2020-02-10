@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    android:layout_marginTop="@dimen/card_margin"
+    android:elevation="2dp"
+    app:cardPreventCornerOverlap="false"
+    android:layout_marginBottom="@dimen/card_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!--suppress AndroidLintContentDescription -->
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:src="@drawable/ic_live_tv"
+            android:scaleType="fitCenter"
+            android:transitionName="poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/card_padding_large"
+            android:paddingTop="@dimen/card_padding_large"
+            android:paddingRight="@dimen/card_padding_large"
+            android:paddingBottom="@dimen/card_padding_large"
+            tools:text="Batman: The Dark Knight Returns, Part 2"
+            android:ellipsize="end"
+            android:maxLines="4" />
+
+        <TextView
+            android:id="@+id/movie_imdb_rating"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/ic_star"
+            android:drawablePadding="5dp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingTop="@dimen/card_padding_large"
+            android:paddingLeft="@dimen/card_padding_large"
+            android:paddingRight="@dimen/card_padding_large"
+            android:paddingBottom="4dp"
+            tools:text="9.5"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/movie_year"
+            android:layout_marginTop="45dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/card_padding_large"
+            android:paddingRight="@dimen/card_padding_large"
+            android:paddingBottom="@dimen/card_padding_large"
+            tools:text="2013" />
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
